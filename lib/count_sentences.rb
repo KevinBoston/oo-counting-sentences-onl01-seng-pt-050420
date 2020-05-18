@@ -18,7 +18,9 @@ class String
     sent_arr = self.split("." || "!" || "?")
     sent_arr.map do |size|
       if size.length < 2
-        size
+        size.delete
+      end
+    end
     #sent_arr.delete_if(size < 2)
     sent_arr.count 
   end
