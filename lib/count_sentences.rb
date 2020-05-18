@@ -16,7 +16,7 @@ class String
 
   def count_sentences
     sent_arr = self.split("." || "!" || "?")
-    sent_arr.map do |size|
+    sent_arr.each do |size|
       if size.length < 2
         size.delete
       end
