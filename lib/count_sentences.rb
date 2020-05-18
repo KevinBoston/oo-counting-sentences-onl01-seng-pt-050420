@@ -16,6 +16,7 @@ class String
 
   def count_sentences
     sent_arr = self.split("." || "!" || "?" || "??" || "..." || "!!")
+    sent_arr.delete_if(size < 2)
     sent_arr.count 
   end
 end
